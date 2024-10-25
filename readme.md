@@ -1,3 +1,7 @@
+## Démo
+
+[démo](https://christophe-008.github.io/book-finder/)
+
 # Recherche de Livres
 
 Ce projet permet de rechercher des livres à l'aide de l'API Open Library. L'utilisateur peut entrer un terme de recherche, et le système affichera jusqu'à 40 résultats, y compris le titre, la couverture, la description et les auteurs des livres. Un loader est affiché pendant le chargement des résultats.
