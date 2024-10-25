@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recherche de livres</title>
+        <link rel="stylesheet" href="assets/css/app.css" />
+        <script src="assets/js/app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <form
+                id="search-form"
+                onsubmit="event.preventDefault(); searchBooks();"
+            >
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Recherchez un livre"
+                    required
+                />
+                <button type="submit">Rechercher</button>
+            </form>
+
+            <!-- Loader -->
+            <div id="loader" style="display: none">
+                <img
+                    src="assets/img/Bean Eater@1x-1.0s-200px-200px.gif"
+                    alt="loader..."
+                />
+            </div>
+
+            <!-- Conteneur où les livres seront affichés -->
+            <div id="data-container"></div>
+
+            <!-- Template pour un livre -->
+            <template id="book-template">
+                <div class="book">
+                    <img class="book-image" src="" alt="Couverture du livre" />
+                    <h2 class="book-title"></h2>
+                    <p class="book-description"></p>
+                    <span class="book-author"></span>
+                </div>
+            </template>
+        </main>
+    </body>
+</html>
